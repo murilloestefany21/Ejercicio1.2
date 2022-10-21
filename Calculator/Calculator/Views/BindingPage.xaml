@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Views.BindingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://img2.freepng.es/20180921/gxa/kisspng-universidad-tecnolgica-de-honduras-tegucigalpa-u-clases-uth-timeline-timetoast-timelines-5ba4e28494c0d0.3323374415375325486093.jpg"
+                   HeightRequest="200"
+                   WidthRequest="600"
+                   HorizontalOptions="CenterAndExpand"
+                   Aspect="Fill"/>
+            <Label Text="NOMBRE:"></Label>
+            <Entry x:Name="txtnombre"></Entry>
+
+            <Label Text="APELLIDO:"></Label>
+            <Entry x:Name="txtapellido"></Entry>
+
+            <Label Text="EDAD:"></Label>
+            <Entry x:Name="txtedad" Keyboard="Numeric"></Entry>
+
+            <Label Text="CORREO ELECTRONICO:"></Label>
+            <Entry x:Name="txtcorreo" Keyboard="Email"></Entry>
+
+            <Button x:Name="btnbinding" Text="ENVIAR INFOMACION" Clicked="btnbinding_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
